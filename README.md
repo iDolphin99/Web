@@ -1,2 +1,2 @@
 # Web
-Just Practice
+For practice, git_tutorial, etc... 
