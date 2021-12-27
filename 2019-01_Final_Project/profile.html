@@ -1,0 +1,84 @@
+<!DOCTYPE html> 
+<HTML>
+    <HEAD>
+        <meta charset="utf-8">
+        <title>HB's DevNote</title>
+        <link rel="stylesheet" href="Header.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="javascript.js"></script>
+
+        <style>
+            #Profile_article{
+                text-align: center;
+            }   
+            section{
+                margin: 0 auto;
+                width:60%;
+                background-color: white;
+                border: 1px solid black
+            }
+            #Mail_button{
+                text-align: center;
+                padding:12px; border-radius: 47px;
+                border:none;
+                background:rgb(30, 77, 172);
+                margin:10px;
+            }
+            #Mail_button > a{
+                text-decoration: none;
+                color:white;
+                font-weight: bold;
+            }
+            h1 {
+                font-size: 30px;
+                margin:40px;
+            }
+        </style>
+    </HEAD>
+
+
+    <body>
+        <header id="Main_header">
+            <div><a href="main.html">DevNote</a></div>
+        </header>
+            
+        <nav id="Top_menu">
+            <ul>
+                <li><a class="menulink", href="profile.html">Profile</a></li>
+                <li><a class="menulink", href="none.html">None</a></li>
+                <li><a class="menulink", href="archive.html">Archive</a></li>
+                <li><a class="menulink", href="lab.html">Lab</a></li>
+                <li><a class="menulink", href="guest.html">Guest</a></li>
+            </ul>
+        </nav><br>
+                
+        <section>
+            <article id="Profile_article">
+                <div style="margin-bottom: 50px;">
+                    <img src="main_smile.jpg" style="margin-top:65px; margin-bottom:20px;">
+                    <h1>I'm ParkHyeongBin</h1>
+                    <h3>Contact here!</h3>
+                    <div style="text-align: center;">
+                        <button id ="Mail_button">
+                            <a href="mailto: mtanger@naver.com" title="mail">E-mail</a>
+                        </button>
+                        <button id ="Mail_button">
+                            <a href="https://github.com/Dolphin1226?tab=repositories" title="github">Github</a>
+                        </button>
+                        <button id ="Mail_button">
+                            <a href="http://wmail.kw.ac.kr/" title="github">KW</a>
+                        </button>
+                    </div>
+                    <br>
+                </div>
+            </article>
+            <div class ="Totop">
+                <a href ="#">Top</a>
+            </div>
+        </section>
+        
+        <footer id="Footer">
+            Copyright © 2018204094 ParkHyeongBin 2019
+        </footer>
+    </body>
+</HTML>

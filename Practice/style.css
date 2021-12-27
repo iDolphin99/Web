@@ -1,0 +1,38 @@
+body {
+  margin: 0px;
+}
+#grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#article {
+  padding: 50px;
+  padding-top: 0px;
+}
+h1 {
+  font-size: 300%;
+  text-align: center;
+  color: blue;
+  border-bottom: 1px solid gray;
+  padding: 20px;
+  margin: 0px;
+}
+#grid ol {
+  border-right: 1px solid gray;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  width: 100px;
+  margin: 0px;
+}
+@media (max-width: 800px) {
+  #grid {
+    display: block;
+  }
+  #grid ol {
+    border: none;
+  }
+  h1 {
+    border: none;
+  }
+}

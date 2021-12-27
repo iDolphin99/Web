@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <meta charset="utf-8">
+    <title>HB's DevNote</title>
+    <link rel="stylesheet" href="Header.css">
+    
+    <style>
+        #fieldset01 {
+            position: relative;
+            vertical-align: middle;
+            margin: 0;
+            left: 30%;
+            margin-top: 110px;
+            border: 4px solid black;
+            width: 40%;
+            height: 50%;
+            margin-bottom: 250px;
+        }
+        #fieldset01>legend {
+            text-align: center;
+            font-size: 50px;
+            font-family: "Courier New", Courier, monospace;
+            font-weight: bold;
+            color: white;
+        }
+        #fieldset01>h3 {
+            margin-top: 50px;
+            text-align: center;
+            margin-bottom: 50px;
+            color: white;
+        }
+        #fieldset01>fieldset {
+            border: 2px black solid;
+            width: 40%;
+            height: 170px;
+            margin-top: 10px;
+            margin-bottom: 50px;
+            color: white;
+            left:27%;
+            position: relative;
+        }
+        #fieldset01 > fieldset > div { 
+            margin-left: 70px;
+            margin-top: 20px;
+            margin-bottom:-40px;
+        }
+        #fieldset01>fieldset>legend, input {
+            text-align: center;
+        }
+        #SubmitButton > div{
+            text-align: center; 
+            margin-bottom: 20px;
+            
+        }
+        #SubmitButton > input{
+            color: black; background:white;
+            padding: 5px; margin: 0;
+            margin-left:-20px;
+            margin-bottom: 20px;
+            border: none;
+        }
+    </style>
+</HEAD>
+
+<BODY>
+    <form name="Login" action="javascript.js" method="GET">
+        <fieldset id="fieldset01">
+            <legend>&nbsp;WHO ARE U?&nbsp;</legend>
+                <h3>NAME : <input type="text" name="name" oninput="input"></h3>
+                    <fieldset>
+                        <legend>
+                            <strong>&nbsp;Please Select Only One!&nbsp; </strong>
+                        </legend>
+                        <div>
+                        <input type="radio" name="gender" value="Male" checked> MALE <br>
+                        <input type="radio" name="gender" value="Female"> FEMALE <br>
+                        <input type="radio" name="gender" value="Other"> OTHER <br><br><br>
+                        </div>
+                        <div id = "SubmitButton">
+                            <input type="button" value="SUBMIT" onclick="input()">&nbsp;&nbsp;
+                            <input type="reset" value="CLEAR" style="margin-left: 0;">
+                            <script>
+                                function input(){
+                                    var name;
+                                    name = document.Login.name.value;
+                                    if (document.Login.name.value.length == 0)
+                                    {alert('삐빅- 입력하고 넘어가세요~ ! ! ');}
+                                    else
+                                    {
+                                    alert('WELCOME ' + name + '! ! \n');
+                                    location.href="Main.html";
+                                    }
+                                }
+                            </script>
+                        </div>
+                    </fieldset>
+        </fieldset>
+    </form>
+
+        <footer id="footer">
+            Copyright © 2018204094 ParkHyeongBin 2019
+        </footer>
+</BODY>
+</HTML>
